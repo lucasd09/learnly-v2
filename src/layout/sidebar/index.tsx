@@ -8,8 +8,8 @@ import {
 } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import { Button } from "../ui/button";
-import LogoOnlyIcon from "../logo";
+import { Button } from "../../components/ui/button";
+import LogoOnlyIcon from "../../components/logo";
 import NavButton from "./components/nav-button";
 import { twMerge } from "tailwind-merge";
 import { useSidebar } from "@/stores/use-sidebar";
