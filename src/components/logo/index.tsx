@@ -2,7 +2,9 @@ import * as React from "react";
 
 import { JSX } from "react/jsx-runtime";
 
-function Logo(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
+export function Logo(
+  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       width={114}
@@ -33,4 +35,33 @@ function Logo(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default Logo;
+function LogoOnlyIcon(
+  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
+) {
+  return (
+    <svg
+      width={64}
+      height={80}
+      viewBox="0 0 64 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g clipPath="url(#clip0_620_46)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M8.229 74.889l7.015-4.022 2.817-1.617 2.765-1.594 4.339-2.486 6.89-3.935 6.898 3.935 4.331 2.486 2.765 1.594 2.824 1.617 6.869 3.963 2.088 1.185 2.037 1.163L64 79.548V41.475l-8.258-4.747v28.675l-5.59-3.218-8.236-4.71-3.14-1.828-2.588-1.462V6.906H27.93v48.406l-5.735 3.298-8.23 4.746-5.735 3.27V36.787l-8.23 4.717v38.1l4.104-2.369 2.06-1.163 2.066-1.184zm41.916-19.27V-1.635H41.91V50.91l8.236 4.71zm-27.944-3.613V15.441h-8.23v41.311l8.23-4.746z"
+          fill="#6366F1"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_620_46">
+          <path fill="#fff" d="M0 0H64V80H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export default LogoOnlyIcon;

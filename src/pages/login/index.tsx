@@ -1,7 +1,6 @@
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -65,7 +64,9 @@ const LoginPage = () => {
               )}
             />
             <div className="flex w-full justify-between">
-              <Button variant={"link"}>Esqueceu sua senha?</Button>
+              <Button variant={"link"} type="button">
+                Esqueceu sua senha?
+              </Button>
               <Button>Acessar</Button>
             </div>
           </form>
